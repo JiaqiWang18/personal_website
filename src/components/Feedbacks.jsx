@@ -36,7 +36,9 @@ const FeedbackCard = ({
         </div>
 
         <Image
-          {...image}
+          src={image}
+          width={40}
+          height={40}
           alt={`feedback_by-${name}`}
           className="w-10 h-10 rounded-full object-cover"
         />
@@ -49,14 +51,14 @@ const Feedbacks = () => {
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-tertiary rounded-2xl sm:px-16 px-6 sm:py-16 py-10 min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      <div className={`-mt-20 pb-14 sm:px-16 px-6 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}

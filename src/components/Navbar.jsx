@@ -11,8 +11,6 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  console.log(logo);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
