@@ -9,6 +9,7 @@ import {
   Works,
   StarsCanvas,
 } from "../components";
+import { herobg } from "../assets";
 
 export const metadata = {
   title: "Home",
@@ -18,7 +19,12 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="relative z-0 bg-primary">
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div
+        className="bg-hero-pattern bg-cover bg-no-repeat bg-center"
+        style={{
+          backgroundImage: `url(${herobg.src})`,
+        }}
+      >
         <Navbar />
         <Hero />
       </div>

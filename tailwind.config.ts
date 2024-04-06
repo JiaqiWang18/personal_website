@@ -22,9 +22,6 @@ const config: Config = {
       screens: {
         xs: "450px",
       },
-      backgroundImage: {
-        "hero-pattern": "url('/herobg.png')",
-      },
     },
   },
   plugins: [],
