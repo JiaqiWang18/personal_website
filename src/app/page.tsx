@@ -10,6 +10,11 @@ import {
   StarsCanvas,
 } from "../components";
 
+export const metadata = {
+  title: "Home",
+  description: "Portfolio website",
+};
+
 export default function Home() {
   return (
     <div className="relative z-0 bg-primary">
